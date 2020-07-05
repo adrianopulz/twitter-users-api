@@ -18,6 +18,6 @@ func main() {
 	})
 
 	// Starting the server.
-	fmt.Println("Server listening!")
+	fmt.Println("Users server listening!")
 	http.ListenAndServe(":80", r)
 }
