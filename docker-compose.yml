@@ -1,0 +1,8 @@
+version: "3"
+services:
+  users_api:
+    build: ./
+    ports:
+      - '9001:80'
+    volumes:
+      - ./:/app
