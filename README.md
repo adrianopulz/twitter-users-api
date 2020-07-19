@@ -1,1 +1,1 @@
-Users' service in the GO programing language. It's part of the Twitter API created to study and practice GO.
+This is a Golang study for microservices  API. This is the Users API for a Twitter-style application.
