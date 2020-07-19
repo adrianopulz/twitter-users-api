@@ -11,5 +11,8 @@
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
 
+# Environment files
+.env
+
 # Docker generated files
-runserver
+main

@@ -1,4 +1,6 @@
 version: "3"
+volumes:
+  data:
 services:
   users_api:
     build: ./
@@ -6,3 +8,14 @@ services:
       - '9001:80'
     volumes:
       - ./:/app
+
+  users_api_db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: "102030"
+      MYSQL_DATABASE: "users"
+    ports:
+      - "8001:3306"
+    volumes:
+      - data:/var/lib/mysql
